@@ -432,44 +432,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
 });
 
-(function() {
-    // Ganti dengan public key Anda
-    emailjs.init("CR_JXj2B_s0d33qpu");
-})();
-
-// Menggunakan kode yang diberikan
-const btn = document.getElementById('button');
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-   
-   // Ubah teks tombol menjadi "Sending..."
-   btn.innerHTML = 'Mengirim... <i class="fas fa-spinner fa-spin ms-2"></i>';
-   btn.disabled = true;
-   
-   const serviceID = 'default_service';
-   const templateID = 'template_rvha66t';
-   
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      // Kembalikan teks tombol seperti semula
-      btn.innerHTML = 'Kirim Pesan <i class="fas fa-paper-plane ms-2"></i>';
-      btn.disabled = false;
-      
-      // Tampilkan pesan sukses
-      alert('Pesan berhasil dikirim!');
-      
-      // Reset formulir
-      this.reset();
-    }, (err) => {
-      // Kembalikan teks tombol seperti semula
-      btn.innerHTML = 'Kirim Pesan <i class="fas fa-paper-plane ms-2"></i>';
-      btn.disabled = false;
-      
-      // Tampilkan pesan error
-      alert('Gagal mengirim pesan: ' + JSON.stringify(err));
-    });
-});
 
 // Uncomment to enable theme switcher
 // document.addEventListener('DOMContentLoaded', addThemeSwitcher);
