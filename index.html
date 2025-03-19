@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Wilhelmus</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wilhelmus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Jasa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-start" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <h1 id="typing-text" class="display-4 fw-bold mb-4"></h1>
+                        <p class="lead mb-4">Saya seorang Developer yang siap membantu mewujudkan visi digital Anda menjadi realitas!</p>
+                        <div class="d-flex gap-3">
+                            <a href="#contact" class="btn btn-primary btn-lg">Hubungi Saya</a>
+                            <a href="#portfolio" class="btn btn-outline-light btn-lg">Lihat Karya</a>
+                        </div>
+                        <div class="social-icons mt-4">
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="photo-frame">
+                        <img src="assets/images/profil.png" alt="Foto Saya">
+                        <div class="photo-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <span class="section-subtitle">Tentang Saya</span>
+                    <h2 class="section-title">Siapa Saya?</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image">
+                        <img src="assets/images/profil.png" alt="Tentang Saya" class="img-fluid rounded-3">
+                        <div class="experience-badge">
+                            <span class="exp-number">5+</span>
+                            <span class="exp-text">Tahun Pengalaman</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="about-content">
+                        <h3>Saya seorang Developer Profesional dengan fokus pada pengalaman pengguna.</h3>
+                        <p class="lead">Dengan pengalaman lebih dari 5 tahun di industri pengembangan web dan aplikasi, saya selalu berdedikasi untuk menciptakan solusi digital yang inovatif dan fungsional.</p>
+                        <p>Saya memiliki keahlian dalam mengembangkan aplikasi modern dengan performa tinggi dan desain yang menarik. Setiap proyek yang saya kerjakan selalu berfokus pada pengalaman pengguna yang optimal dan kode yang berkualitas.</p>
+                        
+                        <div class="skills-container mt-5">
+                            <h4 class="text-center mb-4">Keahlian Saya</h4>
+                            <div class="skills-grid">
+                                <!-- HTML/CSS Skill -->
+                                <div class="skill-icon-wrapper">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                                        <div class="skill-overlay">
+                                            <div class="skill-circle">
+                                                <svg viewBox="0 0 100 100">
+                                                    <circle class="skill-circle-bg" cx="50" cy="50" r="40"></circle>
+                                                    <circle class="skill-circle-progress html-progress" cx="50" cy="50" r="40"></circle>
+                                                </svg>
+                                                <div class="skill-percentage">95%</div>
+                                            </div>
+                                            <div class="skill-name">HTML/CSS</div>
+                                        </div>
+                                    </div>
+                                    <span class="skill-label">HTML/CSS</span>
+                                </div>
+                        
+                                <!-- JavaScript Skill -->
+                                <div class="skill-icon-wrapper">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                        <div class="skill-overlay">
+                                            <div class="skill-circle">
+                                                <svg viewBox="0 0 100 100">
+                                                    <circle class="skill-circle-bg" cx="50" cy="50" r="40"></circle>
+                                                    <circle class="skill-circle-progress js-progress" cx="50" cy="50" r="40"></circle>
+                                                </svg>
+                                                <div class="skill-percentage">90%</div>
+                                            </div>
+                                            <div class="skill-name">JavaScript</div>
+                                        </div>
+                                    </div>
+                                    <span class="skill-label">JavaScript</span>
+                                </div>
+                        
+                                <!-- React Skill -->
+                                <div class="skill-icon-wrapper">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                                        <div class="skill-overlay">
+                                            <div class="skill-circle">
+                                                <svg viewBox="0 0 100 100">
+                                                    <circle class="skill-circle-bg" cx="50" cy="50" r="40"></circle>
+                                                    <circle class="skill-circle-progress react-progress" cx="50" cy="50" r="40"></circle>
+                                                </svg>
+                                                <div class="skill-percentage">85%</div>
+                                            </div>
+                                            <div class="skill-name">React</div>
+                                        </div>
+                                    </div>
+                                    <span class="skill-label">React</span>
+                                </div>
+                        
+                                <!-- PHP/Laravel Skill -->
+                                <div class="skill-icon-wrapper">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                                        <div class="skill-overlay">
+                                            <div class="skill-circle">
+                                                <svg viewBox="0 0 100 100">
+                                                    <circle class="skill-circle-bg" cx="50" cy="50" r="40"></circle>
+                                                    <circle class="skill-circle-progress php-progress" cx="50" cy="50" r="40"></circle>
+                                                </svg>
+                                                <div class="skill-percentage">80%</div>
+                                            </div>
+                                            <div class="skill-name">PHP/Laravel</div>
+                                        </div>
+                                    </div>
+                                    <span class="skill-label">PHP/Laravel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-buttons mt-4">
+                            <a href="#" class="btn btn-primary me-3">Unduh CV</a>
+                            <a href="#contact" class="btn btn-outline-primary">Hubungi Saya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <span class="section-subtitle">Jasa</span>
+                    <h2 class="section-title">Layanan yang Saya Tawarkan</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Pembuatan website modern dengan teknologi terbaru untuk memastikan performa dan keamanan terbaik.</p>
+                        <a href="#" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Pengembangan aplikasi mobile yang responsif dan user-friendly untuk Android dan iOS.</p>
+                        <a href="#" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Pembuatan API dan sistem backend yang skalabel dengan performa tinggi.</p>
+                        <a href="#" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Desain antarmuka yang menarik dan pengalaman pengguna yang optimal untuk website dan aplikasi.</p>
+                        <a href="#" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Optimization</h3>
+                        <p>Optimasi mesin pencari untuk meningkatkan visibilitas website Anda di hasil pencarian.</p>
+                        <a href="#" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Code Review & Consulting</h3>
+                        <p>Konsultasi dan peninjauan kode untuk meningkatkan kualitas dan efisiensi projek Anda.</p>
+                        <a href="#" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <span class="section-subtitle">Portofolio</span>
+                    <h2 class="section-title">Karya Terbaru Saya</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="portfolio-filters">
+                        <button class="filter-btn active" data-filter="all">Semua</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile</button>
+                        <button class="filter-btn" data-filter="design">Design</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="assets/images/siak.png" alt="Project 1" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Sistem Informasi Akademik dengan Keamanan Data Enkripsi AES</h4>
+                                <p>Web Development</p>
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="assets/images/image.png" alt="Project 2" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Brand Identity Design</h4>
+                                <p>UI/UX Design</p>
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="assets/images/image.png" alt="Project 3" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Fitness App</h4>
+                                <p>Mobile Development</p>
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="assets/images/image.png" alt="Project 4" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Learning Management System</h4>
+                                <p>Web Development</p>
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="assets/images/image.png" alt="Project 5" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Restaurant Website</h4>
+                                <p>UI/UX Design</p>
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="600">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="assets/images/image.png" alt="Project 6" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Finance App</h4>
+                                <p>Mobile Development</p>
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-4" data-aos="fade-up">
+                    <a href="#" class="btn btn-primary">Lihat Lebih Banyak</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Testimonials Section -->
+<section id="testimonials" class="section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <span class="section-subtitle">Testimoni</span>
+                <h2 class="section-title">Apa Kata Klien Saya</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Wilhelmus adalah developer yang sangat profesional dan kompeten. Proyek website kami selesai tepat waktu dengan kualitas yang luar biasa. Sangat merekomendasikan jasanya!</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <img src="assets/images/client-1.jpg" alt="Client 1">
+                        </div>
+                        <div class="testimonial-author-info">
+                            <h5>Budi Santoso</h5>
+                            <p>CEO, Tech Startup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Solusi aplikasi mobile yang dikembangkan oleh Wilhelmus sangat membantu bisnis kami. Antarmuka yang mudah digunakan dan fungsionalitas yang sempurna!</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <img src="assets/images/client-2.jpg" alt="Client 2">
+                        </div>
+                        <div class="testimonial-author-info">
+                            <h5>Sarah Wijaya</h5>
+                            <p>Marketing Director, E-Commerce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Kemampuan Wilhelmus dalam menerjemahkan ide menjadi produk digital yang indah sungguh mengesankan. Responsif, profesional, dan hasil kerja yang berkualitas.</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <img src="assets/images/client-3.jpg" alt="Client 3">
+                        </div>
+                        <div class="testimonial-author-info">
+                            <h5>Anton Prabowo</h5>
+                            <p>Founder, Digital Agency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Stats Section -->
+    <section class="stats-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-item text-center">
+                        <div class="stats-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="counter">125</h3>
+                        <p>Projek Selesai</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stats-item text-center">
+                        <div class="stats-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h3 class="counter">95</h3>
+                        <p>Klien Puas</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stats-item text-center">
+                        <div class="stats-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="counter">5</h3>
+                        <p>Tahun Pengalaman</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stats-item text-center">
+                        <div class="stats-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="counter">15</h3>
+                        <p>Penghargaan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    Formulir Kontak dengan EmailJS Diperbarui
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <span class="section-subtitle">Kontak</span>
+                    <h2 class="section-title">Hubungi Saya</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-info">
+                        <h3>Mari Diskusikan Proyek Anda</h3>
+                        <p class="mb-4">Tertarik untuk bekerja sama? Hubungi saya melalui form atau kontak langsung dibawah ini.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Telepon</h5>
+                                <p>+62 821 7474 8550</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Email</h5>
+                                <p>wilhelmus1w.gulo@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Lokasi</h5>
+                                <p>Medan, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social mt-4">
+                            <h5>Ikuti Saya</h5>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="contact-form-wrapper">
+                        <form id="form" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="name">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="email">Alamat Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan alamat email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Masukkan subjek" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini" required></textarea>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" id="button" class="btn btn-primary" value="Send Email">
+                                    Kirim Pesan <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Call To Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-content text-center" data-aos="zoom-in">
+                        <h2>Siap Untuk Memulai Proyek Baru?</h2>
+                        <p>Mari bekerja sama untuk mewujudkan ide Anda menjadi realitas digital!</p>
+                        <a href="#contact" class="btn btn-light btn-lg">Hubungi Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-info">
+                        <h3>Wilhelmus</h3>
+                        <p>Seorang Developer profesional dengan fokus pada pengembangan web dan aplikasi mobile yang modern dan berkualitas.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h4>Navigasi</h4>
+                        <ul>
+                            <li><a href="#home">Beranda</a></li>
+                            <li><a href="#about">Tentang</a></li>
+                            <li><a href="#services">Jasa</a></li>
+                            <li><a href="#portfolio">Portofolio</a></li>
+                            <li><a href="#contact">Kontak</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h4>Layanan</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile App</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Backend Development</a></li>
+                            <li><a href="#">SEO Optimization</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-newsletter">
+                        <h4>Berlangganan Newsletter</h4>
+                        <p>Dapatkan informasi terbaru dan tips menarik seputar dunia teknologi.</p>
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Anda" required>
+                                <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-bar">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Wilhelmus. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Designed by <a href="#">Wilhelmus</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="portfolio-modal-img">
+                                    <img src="" alt="Project Image" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="portfolio-modal-content">
+                                    <h2 class="portfolio-modal-title"></h2>
+                                    <p class="portfolio-modal-category"></p>
+                                    <div class="portfolio-modal-description"></div>
+                                    <ul class="portfolio-modal-info">
+                                        <li><strong>Klien:</strong> <span class="portfolio-client"></span></li>
+                                        <li><strong>Tanggal:</strong> <span class="portfolio-date"></span></li>
+                                        <li><strong>Teknologi:</strong> <span class="portfolio-technology"></span></li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary portfolio-link" target="_blank">Live Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Main JS -->
+    <script type="module">
+        import { BackgroundAnimator } from './assets/js/background-animator.js';
+        const background = new BackgroundAnimator('background-canvas', {
+            particleCount: 100,
+            mouseRadius: 150,
+            particleColor: 'random',
+            backgroundColor: { from: '#1a1a2e', to: '#16213e' },
+            lineDistance: 100,
+            enableMouseInteraction: true,
+            enableClickEffects: true
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+ <!-- Tambahkan EmailJS SDK sebelum tag penutup body -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+// Inisialisasi EmailJS
+
+</script>
+
+</body>
+</html>
